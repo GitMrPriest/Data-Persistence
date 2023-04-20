@@ -9,7 +9,7 @@ public class DataManager : MonoBehaviour
     public static DataManager Instance { get; private set; }
 
     public Score[] scores { get; private set; }
-    public string playerName;
+    public string playerName = "AAA";
 
     private void Awake()
     {

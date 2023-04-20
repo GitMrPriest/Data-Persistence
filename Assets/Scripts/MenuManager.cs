@@ -30,6 +30,10 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
         #endif
     }
+    public void SetName(string playerName)
+    {
+        DataManager.Instance.playerName = playerName;
+    }
 
     //Should be moved to DataManager or some other script, to avoid duplicates
     void UpdateHighScoreText()
